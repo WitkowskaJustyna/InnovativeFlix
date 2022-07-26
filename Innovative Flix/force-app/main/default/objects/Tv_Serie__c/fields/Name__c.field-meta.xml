@@ -3,7 +3,7 @@
     <fullName>Name__c</fullName>
     <caseSensitive>false</caseSensitive>
     <externalId>false</externalId>
-    <label>Name</label>
+    <label>Title</label>
     <length>255</length>
     <required>true</required>
     <trackTrending>false</trackTrending>

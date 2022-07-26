@@ -55,7 +55,7 @@
     <label>Tv Serie</label>
     <nameField>
         <displayFormat>{000}</displayFormat>
-        <label>Id</label>
+        <label>Name</label>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Tv Series</pluralLabel>
