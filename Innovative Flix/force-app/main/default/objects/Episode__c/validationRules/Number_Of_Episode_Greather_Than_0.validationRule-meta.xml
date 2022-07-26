@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_Of_Episode_Greather_Than_0</fullName>
+    <active>true</active>
+    <errorConditionFormula>Number__c &lt;= 0</errorConditionFormula>
+    <errorDisplayField>Number__c</errorDisplayField>
+    <errorMessage>Number of episode must be greather than 0</errorMessage>
+</ValidationRule>
