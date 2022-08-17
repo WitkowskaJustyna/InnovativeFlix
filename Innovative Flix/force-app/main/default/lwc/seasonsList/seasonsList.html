@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+      
+            <template for:each={seasons.data} for:item = "seasonObj" for:index="index">
+                <!-- <p key={seasonObj.Id} class="slds-p-horizontal_small">
+                    <a href="#" onclick={handleOpenRecordClick} data-seasonid={seasonObj.Id}>{seasonObj.Number__c}
+                    </a>  
+                </p> -->
+                <lightning-button variant="destructive" key={seasonObj.Id} label={seasonObj.Number__c}
+                    value={seasonObj.Id} onclick={handleOpenRecordClick}>
+                </lightning-button>
+            </template>
+       
+    </lightning-card>
+    <lightning-layout-item size="3">
+        <c-episodes season-id={seasonId}></c-episodes>
+    </lightning-layout-item>   
+</template>

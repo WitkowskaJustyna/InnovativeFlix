@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Tv Series">
+        <template if:true={tvSeries.data}>
+            <lightning-input type="search" onchange={handleSearchTermChange} variant="label-hidden"
+                class="slds-var-m-bottom_small" label="Search" placeholder="Put Tv Serie Title" value={searchTerm}>
+            </lightning-input>
+           
+            <template for:each={tvSeries.data} for:item="tvSerie">
+                <lightning-layout-item key={tvSerie.Id} size="3">
+                    <c-tv-Serie tv-serie={tvSerie}>
+                    </c-tv-Serie>
+                </lightning-layout-item>
+            </template>
+        
+            <template if:false={seriesNotInDatabase}>
+                <div class="slds-align_absolute-center slds-var-m-vertical_small">
+                    Tv Serie not found
+                </div>
+            </template>
+        </template>
+        <template if:true={tvSeries.error}>
+            <div class="slds-text-color_error">
+                Error
+            </div>
+        </template>
+    </lightning-card>
+</template>

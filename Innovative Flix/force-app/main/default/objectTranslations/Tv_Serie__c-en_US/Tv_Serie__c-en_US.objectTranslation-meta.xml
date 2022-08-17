@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tv Serie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tv Series</value>
+    </caseValues>
+    <layouts>
+        <layout>Tv Serie Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Length_Of_The_Name</name>
+    </validationRules>
+</CustomObjectTranslation>
