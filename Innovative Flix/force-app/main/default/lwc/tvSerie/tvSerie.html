@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title={tvSerie.Name__c} >
+        <div class="slds-var-p-horizontal_small">
+            <div class="slds-media">
+                <div class="slds-media__figure">
+                    <img src={tvSerie.Logo_URL__c} alt="tvSerie" width="200" height="300" />
+                </div>
+                <div class="slds-media__body">  
+                    
+                        <lightning-button variant="destructive" label="Seasons" value={tvSerie.Id}
+                            onclick={handleOpenRecordClick}></lightning-button>
+                    
+                    <lightning-layout-item padding="around-small" size="3">
+                        <c-seasons-List tv-serie-id={tvSerieId}>
+                        </c-seasons-List>
+                    </lightning-layout-item>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

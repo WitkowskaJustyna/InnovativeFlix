@@ -1,0 +1,9 @@
+<template>
+    <lightning-card >
+        <lightning-datatable if:true={episodes.data} hide-checkbox-column="true" 
+            key-field="id"
+            data={episodes.data}
+            columns={columns}>
+        </lightning-datatable>
+    </lightning-card>    
+</template>
